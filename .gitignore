@@ -1,0 +1,72 @@
+# Qt / Qt Creator
+*.pro.user
+*.pro.user.*
+*.creator.user
+*.moc
+*.o
+*.obj
+*.exe
+build-*/
+Makefile
+*.qrc.cpp
+ui_*.h
+
+# Debug / Release folders
+debug/
+release/
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# OS
+.DS_Store
+Thumbs.db
+EOF
+确认文件已创建
+
+bash
+复制
+编辑
+ls -a
+# 应该能看到 .gitignore 列在文件列表里
+添加到 Git 并提交
+
+bash
+复制
+编辑
+git add .gitignore
+git commit -m "Add .gitignore"
+方法二：使用文本编辑器（例如 VS Code、Notepad++ 等）
+在项目根目录中新建一个文件，命名为 .gitignore（注意文件名前有一个点）。
+
+用编辑器打开它，把下面内容粘进去并保存：
+
+# Qt / Qt Creator
+*.pro.user
+*.pro.user.*
+*.creator.user
+*.moc
+*.o
+*.obj
+*.exe
+build-*/
+Makefile
+*.qrc.cpp
+ui_*.h
+
+# Debug / Release folders
+debug/
+release/
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# OS
+.DS_Store
+Thumbs.db
